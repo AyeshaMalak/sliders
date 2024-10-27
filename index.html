@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider Showcase</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Slider Showcase</h1>
+        <p>Explore different types of sliders</p>
+    </header>
+
+    <section id="slider1" class="slider-container">
+        <h2>1. Basic Manual Slider</h2>
+        <div class="slider">
+            <div class="slides">
+                <img src="img-6.avif" class="slide" alt="Slide 1">
+                <img src="img7.avif" class="slide" alt="Slide 3">
+             
+            </div>
+            <button class="prev" onclick="prevSlide1()">❮</button>
+            <button class="next" onclick="nextSlide1()">❯</button>
+        </div>
+    </section>
+
+    <section id="slider2" class="slider-container">
+        <h2>2. Auto Sliding Carousel</h2>
+        <div class="carousel">
+            <div class="carousel-slides">
+                <img src="img9.webp" class="carousel-slide" alt="Slide 5">
+                <img src="img10.webp" class="carousel-slide" alt="Slide 6">
+            </div>
+        </div>
+    </section>
+
+    <section id="slider3" class="slider-container">
+        <h2>3. Fade-in Slider</h2>
+        <div class="fade-slider">
+            <img src="img11.jpg" class="fade-slide" alt="Slide 7">
+            <img src="img12.jpg" class="fade-slide" alt="Slide 8">
+        </div>
+    </section>
+
+    <section id="slider4" class="slider-container">
+        <h2>4. Thumbnail Navigation Slider</h2>
+        <div class="thumbnail-slider">
+            <img src="img16.jpg" class="thumb-slide active" onclick="showSlide4(0)" alt="Slide 10">
+            <img src="img14.jpg" class="thumb-slide" onclick="showSlide4(1)" alt="Slide 11">
+        
+        </div>
+        <div class="main-image">
+            <img src="image10.jpg" id="mainImage" alt="Main Slide">
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
